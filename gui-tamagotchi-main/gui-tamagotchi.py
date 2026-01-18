@@ -228,40 +228,20 @@ def main():
             for jmeno, funkce in tlacitka2.items():
                 ui.button(jmeno, on_click=funkce).props("color=red-400 text-color=black rounded")
 
-    # print("Vítej!")
+    print("Vítej!")
     print("""
         /\\_/\\  
        ( O.O )
       (  v v  )
         """)
 
-    # print(f"""Pro ukončení napiš konec. 
-    #     \nPro nakrmení {kocka["jmeno"]} stiskni k. 
-    #     \nPro napití stiskni z. 
-    #     \nPro hraní s {kocka["jmeno"]} stiskni h. 
-    #     \nPro spánek stiskni s. 
-    #     \nPro reset napiš reset""")
 
-    # uziv_input = input()
-
-    # match uziv_input.lower():
-    #     case "konec":
-    #         print("Ukončení programu... bye (>w<)!")
-    #     case "v":
-    #         vypis_status()
-    #     case "reset":
-    #         reset()
-    #     case _:
-    #         print("Neplatná klávesa")
     
     ui.run(native=True)
 
-    # hladoveni()
-    # starnuti()
-    # save()
-    # zkontroluj_status()
 
 ui.query('body').style("background-color: lightblue")
 
 main()
+
 
